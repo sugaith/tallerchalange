@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      // 2 - Sorted Squared Array
+      function sortedSquaredArray(sortedArray) {
+        const squaredArray = [];
+        for (const element of sortedArray) {
+          console.log(element)
+          squaredArray.push(Math.pow(element, 2));
+        }
+
+        return squaredArray.sort((a, b) => a - b);
+      }
+    </script>
+
+
+    <!--RUN-->
+    <script>
+      $(document).ready(() => {
+        // 2 - Sorted Squared Array
+        const sortedArray = [1, 2, 3, 5, 6, 8, 9];
+        const sortedArray2 = [-2, -1];
+        const sortedArray3 = [-10, -5, 0, 5, 10];
+
+        console.log(sortedSquaredArray(sortedArray3))
+      });
+    </script>
+  </body>
+</html>
